@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как да помогна?</title>
+    <link rel="shortcut icon" href="photos/bukva.ico">
+    <link href="kakda.css" rel="stylesheet" type="text/css">
+    <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script>
+        window.alert("Здравей!\nЩе се радваме да се присъединиш!");
+
+        function klikni() {
+            document.getElementById('buton1').innerHTML='Изключвайте телевизорите, видео и аудио системите и компютрите, когато не ги използвате. Изключвайте лампите, когато не сте в стаята – така веднага спестявате енергия. Изключвайте мониторите на компютрите, когато не работите на тях.';
+         }
+
+        function klikni2() {
+            document.getElementById('buton2').innerHTML='Когато купувате пералнаолите, поне от клас А. Тези модели са малко по-скъпи, но се изплащат чрез по-ниските сметки за електричество. Същото важи и за офис оборудването като компютри, копирни машини, принтери.';
+         }
+
+         function klikni3() {
+             document.getElementById('buton3').innerHTML='Заменете обикновените крушки с енергоспестяващи лампи. Те са доста по-скъпи от обикновените, но с тях накрая спестявате пари, защото използват само около една четвърт от електричеството за да произведат същата светлина. Освен това са 4 пъти по-трайни от нормалните електрически крушки!';
+         }
+
+         function klikni4() {
+             document.getElementById('buton4').innerHTML='Когато си купувате кола, нека тя да е икономична и да не вреди на природата. Това не само ще ви спести пари, но и ще предотврати ването на още количества CO2 в атмосферата. Изключвайте мотора, когато не сте в движение.';
+         }
+
+         function klikni5() {
+             document.getElementById('buton5').innerHTML='Дали не може да сложите слънчеви панели на покрива на къщата и да превърнете собствения си дом в малка чиста електроцентрала?!'
+         }
+         /* These paragraphs will be red */
+
+function tuk()
+ {
+    var x = document.getElementById("fоrm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+  
+    document.getElementById("demo").innerHTML = text;
+}
+
+    </script>
+
+</head>
+<body>
+
+     <header class="col-12">
+         <div>
+         <a href="index.html">   <img src="photos/logoBG.png" class="logo" alt="logo"></a>
+        </div>
+        <h1>
+            Как да помогна?
+           <a href="https://www.google.com/search?client=firefox-b-d&q=facebook">  <img class="img" src="photos/fb.png" alt="facebook"/></a>
+            <a href="https://www.instagram.com/"> <img class="img" src="photos/insta.jpg" alt="instagram"/></a>
+            <a href="https://twitter.com/?lang=bg"> <img class="img" src="photos/tw.png" alt="twitter"/></a> 
+        </h1>
+        
+    </header>
+        
+    <img src="photos/rila2.jpg">
+
+    <nav>
+    
+        <ul class="ul1">
+            <li class="li1">
+            <a href="parka.html">Паркът</a>
+            </li>
+            <li class="li1">
+            <a href="problemi.html">Проблеми и заплахи</a>
+            <li class="li1">
+            <a href="kakda.html">Как да помогна?</a>
+            </li> 
+            <li class="li1">
+            <a href="mislizeleno.html" >Мисли в "зелено"</a>
+            </li>
+            <li class="li1">
+            <a href='contact.html'>Контакти</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <section>
+        <h3>Няколко начина да спрем самоунищожението:</h3>
+        
+        <ol>
+            <li>Избягвайте ,,режима на готовност“ и изключвайте лампите</li>
+            <button onclick="klikni()">Разбери как</button>
+            <div id="buton1"></div>
+            
+            <li>Купувайте енергийноефективни уреди</li>
+            <button onclick="klikni2()" >Разбери как</button>
+            <div id="buton2"></div>
+
+            <li>Енергоспестяващите лампи са по-евтини в дългосрочен план</li>
+            <button onclick="klikni3()" >Разбери как</button>
+            <div id="buton3"></div>
+
+            <li>Колата</li>
+            <button onclick="klikni4()" >Разбери как</button>
+            <div id="buton4"></div>
+            
+            <li>Радвайте се на слънцето</li>
+            <button onclick="klikni5()">Разбери как</button>
+            <div id="buton5"></div>
+        </ol>
+        
+            <div>Ако искаш да участваш се запиши тук!</div>
+            <form id="fоrm1">
+                <label for="fname"> Име:</label>
+                <input type="text" id="fname" name="fname" ><br>
+
+                <label for="lname">Фамилия:</label>
+                <input type="text" id="lname" name="lname" ><br>
+            
+                <label for="age">години</label>
+                <input type="text" name="age"> <br> 
+            </form>
+            
+            <input type="submit" onclick="tuk()" value="запиши се" >
+            <p id="demo"></p>
+
+    </section>
+
+    <footer>
+        Включи се и ти!
+    </footer>
+</body>
+</html>

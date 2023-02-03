@@ -1,0 +1,157 @@
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica;
+    font-family: cursive;
+    background-image: url("photos/rila2.jpg");
+    height: 50vw;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    
+    }
+
+
+h1 {
+    position: fixed;
+    padding-top: 90px;
+    padding-left: 450px;
+    font-size: 2.5VW;
+    text-shadow: 5px 5px 5px #6baac4;  /* Set text color to blue */
+    }
+    
+
+tr {
+    color:white;  /* Set text color to white */
+    text-align: center;
+    font-size: 20px;
+    }
+
+.logo {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    
+    }
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #6baac4;
+    
+    } 
+
+.img {
+    width: 4vw;
+    height: 6vh;
+    float: right;
+    margin: 10px 10px 10px 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    }   
+
+section {
+    font-size: 1.5vw;
+    color: black;
+    margin-top: 300px;
+    float: left;
+    width: 100%;
+    text-align: justify;
+    background: rgb(255, 255, 255, 0.3)
+    }
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+    }
+
+table {
+    margin-left: 400px;
+    width: 800px;
+    height: 100px;
+    }
+   
+td:hover {
+    background-color: rgb(141, 197, 211);
+    }
+
+    
+    @media only screen and (max-width: 1465px) {
+    nav {height: 12%;}
+
+    tr {
+       font-size: 15px
+    }
+        
+    table {
+        
+        margin-left: 9vw;
+        width: 70%;
+    }
+    
+    .img {
+        width: 3vw
+    }
+    
+    .logo {
+        height:8vh;
+        width: 5vh;
+        padding-top: 10px;
+        margin-left: 10px 
+    }
+      
+    h1 {
+        padding-left: 30%;
+        font-size: 2vw
+    }
+    
+    section {
+        font-size: 1vw;
+        margin-top: 250px
+            
+    }
+}
+
+    @media only screen and (max-width:750px) {
+    nav {height: 9%;}
+
+    tr {
+       font-size: 10px
+       
+    }
+        
+    table {
+        margin-left: 15vw;
+        width: 60%;
+        height: 70px;
+         }
+    
+    .img {
+        width: 2vw;
+        height: 3vh;
+    }
+    
+    .logo {
+        height:5vh;
+        width: 4vh;
+        
+    }
+      
+    h1 {
+    
+        font-size: 1.5vw
+    }
+    
+    section {
+        font-size: 1vw;
+        margin-top: 200px
+            
+    }
+}
+
+
